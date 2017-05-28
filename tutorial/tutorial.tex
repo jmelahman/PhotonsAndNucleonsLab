@@ -1,0 +1,306 @@
+\documentclass[10pt]{article}
+\usepackage[total={6in,9.25in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\lstset{language=C++}
+\usepackage[backend=biber,style=phys]{biblatex}
+\usepackage{csquotes}
+\graphicspath{ {./images/} }
+\author{Jamison Lahman}
+\title{Tutorial}
+\addbibresource{tutorial.bib}
+
+\begin{document}
+
+\begin{flushright}Jamison Lahman \\
+PHYS 3701 \\
+Tutorial \\
+Jan 29, 2017
+\end{flushright}
+
+\begin{flushleft}
+1) Determine the mean, RMS, number of counts, and error on the mean for the five prominent peaks in the Na-22, Co-60, and Cs-137 spectra. Quote the gamma ray energy and uncertainty for each of the peaks; include a citation of your reference source.
+\end{flushleft}
+To find the mean of a peak which spans a total of $n$ bins from $j$ to $k$ and which contains a total of $N$ counts, we used the following equation,
+\begin{equation}
+<x>  = \frac{1}{N}\sum^{k}_{i=j} (x_i \cdot count_i)
+\end{equation}
+The RMS, or standard deviation $\sigma_x$ is then
+\begin{equation}
+\sigma_{x} = \sqrt{<x^2>-<x>^2}
+\end{equation}
+where $<x^2>$ is defined as
+\begin{equation}
+<x^2>  = \frac{1}{N}\sum^{k}_{i=j} (x_{i}^{2} \cdot count_i)
+\end{equation}
+The standard error of the mean is defined as
+\begin{equation}
+\sigma(\bar{x}) = \frac{\sigma_x}{\sqrt{N}}
+\end{equation}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Material & Mean & $\sigma(\bar{x})$ & \# of Counts & RMS & Gamma Energy (keV) & Uncertainty \\ 
+\hline 
+Na & 1511.977 & 0.056 & 2132 & 5.171 & 511.000 & 0.000 \\ 
+\hline 
+Na & 3840.27 & 0.10 & 8125 & 4.736 & 1274.537 & 0.007 \\ 
+\hline 
+Cs & 1971.994 & 0.060 & 3579 & 3.604 & 661.657 & 0.003 \\ 
+\hline 
+Co & 3531.45 & 0.11 & 1414 & 4.051 & 1173.228 & 0.003 \\ 
+\hline 
+Co & 4016.90 & 0.12 & 1132 & 4.023 & 1332.492 & 0.004 \\ 
+\hline 
+\end{tabular}
+\captionof{table}{Prominent peaks in Na-22, Co-60, and Cs-137 spectra. Gamma ray energies and uncertainties were taken from NuDat2.6.\cite{sonzogni}}
+\end{center}
+\begin{flushleft}
+2) Determine the energy calibration using the five peaks in the Na-22, Co-60, and Cs-137 spectra. Determine the error on the calibration.
+\end{flushleft}
+The uncertainty used for fitting, $\sigma_i$ was found using the error on the mean and uncertainty on the gamma ray energy from literature, $\sigma_\gamma$
+\begin{equation}
+\sigma_i = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2\sigma_x^2+\sigma_{\gamma}^2}
+\end{equation}
+Since the partial derivative of the least-squares fit function, $y(x)=ax+b$, with respect to $x$ is $a$, making the formula implicit. To obtain a rough estimate of $a$, we applied  a least-squares fit according to chapter 6 of Bevington.\cite{bevington}
+\begin{eqnarray}
+a &=& \frac{1}{\Delta}\left(\sum\frac{1}{\sigma_i^2}\sum\frac{x_i y_i}{\sigma_i^2}-\sum \frac{x_i}{\sigma_i^2}\sum\frac{y_i}{\sigma_i^2}\right) \\
+b &=& \frac{1}{\Delta}\left(\sum\frac{x_i^2}{\sigma_i^2}\sum\frac{y_i}{\sigma_i^2}-\sum\frac{x_i}{\sigma_i^2}\sum\frac{x_i y_i}{\sigma_i^2}\right) \\
+\Delta &=& \sum\frac{1}{\sigma_i^2}\sum\frac{x_i^2}{\sigma_i^2}-\left(\sum\frac{x_i}{\sigma_i^2}\right)^2
+\end{eqnarray}
+The mean bin was fitted as the independent variable and the gamma ray energy as the dependent variable. With the initial guess using $\sigma_i^2 =(\sigma_x^2+\sigma_{\gamma}^2)$, we got a value of 0.328 for $a$. Now, (5) can be solved for $\sigma_i$
+\begin{equation}
+\sigma_i = \sqrt{a^2\sigma_x^2+\sigma_{\gamma}^2}
+\end{equation}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Material & Mean & $\sigma_x$ & Gamma Energy (keV)\cite{sonzogni} & $\sigma_\gamma$ & $\sigma_i$ \\ 
+\hline 
+Na & 1511.977 & 0.056 & 511.000 & 0.000 & 0.018 \\ 
+\hline 
+Na & 3840.27 & 0.10 & 1274.537 & 0.007 & 0.034\\ 
+\hline 
+Cs & 1971.994 & 0.060 & 661.657 & 0.003 & 0.020 \\ 
+\hline 
+Co & 3531.45 & 0.11 & 1173.228 & 0.003 & 0.035 \\ 
+\hline 
+Co & 4016.90 & 0.12 & 1332.492 & 0.004 & 0.039 \\ 
+\hline 
+\end{tabular}
+\captionof{table}{Input data for the least-squares fitting.}
+\end{center}
+Additionally, the errors of the fit are given by Nudat.\cite{bevington}
+\begin{eqnarray}
+\sigma_a^2 &=& \frac{1}{\Delta}\sum\frac{1}{\sigma_i^2} \\
+\sigma_b^2 &=& \frac{1}{\Delta}\sum\frac{x_i^2}{\sigma_i^2} \\
+\text{cov}(a,b) &=& \frac{-1}{\Delta}\sum\frac{x_i}{\sigma_i^2}
+\end{eqnarray}
+Again using (7), (8), and (9), we were able to fit the data. The values from Table 2 produce the following fit parameters for the equation $y(x)=ax+b$
+\begin{eqnarray}
+a&=&0.327973\pm 7.7\times 10^{-5} \\
+b&=&15.02\pm 0.20 \\
+\text{cov}(a,b)&=&-1.292\times 10^{-5}
+\end{eqnarray}
+Which produces the following graph \\
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{firstfit}
+\caption{The linear regression applied to the five points.}
+\end{figure}
+\begin{flushleft}
+3) Find the energy residuals (residual = fit energy - literature energy) for your five calibration peaks. Comment on the size of the residuals compared to the calibration errors.
+\end{flushleft}
+The standard error of the fit is defined as
+\begin{equation}
+\sigma_{fit} = \sqrt{x^2\sigma_a^2+\sigma_b^2+2x\cdot\text{cov}(a,b)}
+\end{equation}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Material & Bin & $\sigma_i$ & Fit Energy (keV) & $\sigma_{fit}$ & Literature Energy (keV)\cite{sonzogni} & Residual  \\ 
+\hline 
+Na & 1511.977 & 0.018 & 510.91 & 0.11 & 511.000 & -0.093 \\ 
+\hline 
+Na & 3840.265 & 0.034 & 1274.523 & 0.087 & 1274.537 & -0.014 \\ 
+\hline 
+Cs & 1971.994 & 0.020 & 661.780 & 0.096 & 661.657 & 0.123 \\ 
+\hline 
+Co & 3531.445 & 0.035 & 1173.24 & 0.11 & 1173.228 & 0.010 \\ 
+\hline 
+Co & 4016.900 & 0.039 & 1332.45 & 0.12 & 1332.492 & -0.039 \\ 
+\hline 
+\end{tabular}
+\captionof{table}{Analysis of the fit.}
+\end{center}
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{firstresidual}
+\caption{The residual of the Cesium-137 and the 511 keV peak in the Na-22 are both more than 5 standard errors away from the fit which is highly unlikely.}
+\end{figure}
+\begin{flushleft}
+4) Compare the number of events in the two peaks in each of the Co-60 and Na-22 calibration spectra; comment on the agreement or disagreement of the ratio of the peaks to what you would expect based on literature information; include a citation of your literature source.
+\end{flushleft}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Material & Gamma Energy (keV) & Peak Count & $\sigma_y$ & Intensity(\%) & Intensity Uncertainty   \\ 
+\hline 
+Na & 511.000 & 652 & 228.99 & 180.76 & 0.04 \\ 
+\hline
+Na & 1274.537 & 200 & 64.69 & 99.94 & 0.14 \\
+\hline
+Co & 1173.228 & 137 & 47.51 & 99.85 & 0.03 \\
+\hline
+Co & 1332.492 & 116 & 36.58 & 99.9826 & 0.0006 \\
+\hline
+\end{tabular}
+\captionof{table}{Expected intensities of Co-60 and Na-22.\cite{sonzogni} $\sigma_y$ is found using (2) in the y-dimension.}
+\end{center}
+The ratio of intensities and the error on the ratios are given respectively by
+\begin{eqnarray}
+R &=& \frac{y_1}{y_2} = \frac{\text{intensity}_1}{\text{intensity}_2} \\
+\Delta R &=& R\cdot\sqrt{\left(\frac{\sigma_{y_{1}}}{y_1}\right)^2+\left(\frac{\sigma_{y_{2}}}{y_2}\right)^2}
+\end{eqnarray}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Material & R & $\Delta R$ & Literature Ratio\cite{sonzogni} \\ 
+\hline 
+Na  & 3.26 & 1.56 & 1.81 \\ 
+\hline
+Co & 1.18 & 0.55 & 1.00 \\
+\hline
+\end{tabular}
+\captionof{table}{Both measured intensities are within one standard deviation from the accepted values.}
+\end{center}
+\begin{flushleft}
+5) Determine the energy resolution of the detector. Does the energy resolution depend on gamma ray energy? If so, describe the energy dependence of the energy resolution.
+\end{flushleft}
+The energy resolution can be found by multiplying the RMS by 2.35 to find the FWHM then multiply by the slope (13) of the calibration to find it in terms of energy units.\cite{wikipedia}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Material & Gamma Energy (keV) & RMS & Energy Resolution (keV)\\ 
+\hline 
+Na & 511.000 & 5.167 & 3.98 \\ 
+\hline
+Cs & 661.657 & 3.604 & 2.78 \\
+\hline
+Co & 1173.228 & 4.023 & 3.12 \\
+\hline
+Na & 1274.537 & 4.736 & 3.65 \\
+\hline
+Co & 1332.492 & 4.051 & 3.10 \\
+\hline
+\end{tabular}
+\captionof{table}{The energy resolutions do not appear to have an energy dependency.}
+\end{center}
+\begin{flushleft}
+6) Choose four prominent peaks in the europium spectrum, and determine the mean, RMS, number of counts, and error on the mean for each. Note that many of the peaks in the europium spectra will require background subtraction.
+\end{flushleft}
+To deal with the background counts, a modified sideband subtraction methods was employed. Given a peak which spans a bin range of $[x_1,x_2]$, the average count over the intervals $[x_1-\frac{x_2-x_1}{2}-1,x_1)$ and $(x_2,x_2+\frac{x_2-x_1}{2}+1]$ are used as the \textit{y} values to estimate a linear equation of the background over the peak interval, i.e.
+\begin{equation}
+y_{bkgd} = \left(\frac{(\bar y_{-})-\bar y_{+}}{(\bar x_{-})-\bar x_{+}}\right)(x_{bin}-(\bar x_{-}))+(\bar y_{-})
+\end{equation}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+Peak Interval & $\bar y_{-}$ & $\bar y_{+}$  & Counts Subtracted &  $\sigma_{peak}$ & $\sigma_{bkgd}$ \\ 
+\hline 
+[312,335] & 243.20 & 193.60 & 5271.36 & 1298.74 & 30.44 \\ 
+\hline 
+[686,711] & 95.09 & 76.45 & 2241.10 & 199.28 & 13.34 \\ 
+\hline
+[990,1017] & 54.67 & 54.5 & 1528.04 & 462.03 & 7.34 \\
+\hline 
+[2320,2347] & 25.08 & 20.67 & 643.08 & 73.72 & 4.74 \\ 
+\hline 
+\end{tabular}
+\captionof{table}{The average number of counts in the bands before and after the peak interval. The total number of counts subtracted are the predicted background counts over the peak interval given by (19). The standard deviations where found using (2) but in the y-dimension.}
+\end{center}
+\newpage
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{subtraction}
+\caption{The Europium-152 background subtraction near the 330 bin peak. The values are from Table 7. The background subtraction function was calculated using (19).}
+\end{figure}
+Again, using (1-4), we found the mean, RMS, and error on the mean for the Europium peaks near bins 324, 700, 1000, 2333.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Mean Bin & $\sigma(\bar{x})$ & \# of Counts & RMS \\ 
+\hline 
+323.991 & 0.019 & 26958.2 & 3.054 \\ 
+\hline 
+699.153 & 0.048 & 4106.68 & 3.068  \\ 
+\hline 
+1003.030 & 0.031 & 10046.92 & 3.127  \\ 
+\hline 
+2332.911 & 0.088 & 1883.79 & 3.811  \\ 
+\hline 
+\end{tabular}
+\captionof{table}{Prominent peaks in Na-22, Co-60, and Cs-137 spectra. Gamma ray energies and uncertainties were taken from NuDat2.6.\cite{sonzogni}}
+\end{center}
+\begin{flushleft}
+7) Using your calibration, determine the energies and errors for your four europium peaks. Match your peaks to known gamma rays produced in the decay of Eu-152. Find the energy residuals residual = fit energy - literature energy) and errors. 
+\end{flushleft}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+Mean Bin & Calibration Energy & $\sigma_{y}$ & $\sigma_{fit}$ & Known Peak & Uncertainty & Residual  \\ 
+\hline 
+323.991 & 121.2795 & 0.0061 & 0.18 & 121.7817 & 0.0003 & -0.1565 \\ 
+\hline 
+699.153 & 244.322 & 0.016 & 0.15 & 244.6974 & 0.0008 & -0.029 \\ 
+\hline 
+1003.030 & 343.986 & 0.010 & 0.14 & 344.2785 & 0.0012 & -0.292 \\ 
+\hline 
+2332.911 & 780.077 & 0.029 & 0.076 & 778.9045 & 0.0024 & 1.247 \\ 
+\hline 
+\end{tabular}
+\captionof{table}{Prominent peaks in the Europium-152 sample. The fitting was done with values from (13) and (14). $\sigma_{y}$ and $\sigma_{fit}$ are found using (9) and (16) respectively. The literature energies were taken from NuDat2.\cite{sonzogni}}
+\end{center}
+\begin{flushleft}
+8) Using your four europium peaks, determine the detector efficiency as a function of energy. Include error analysis.
+\end{flushleft} 
+Detector efficiency is measured by comparing the count rates in each peak to the count rates expected from the known intensities of each gamma ray.\cite{wikipedia}
+\begin{equation}
+\epsilon = \frac{N}{Intensity}
+\end{equation}
+While the error is given by the equation
+\begin{equation}
+\Delta \epsilon = \sigma_{\%}\frac{N}{Intensity^2}
+\end{equation}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Mean Bin & Counts & Intensity\cite{sonzogni} & Efficiency Uncertainty & Efficiency & Intensity Uncertainty \\ 
+\hline 
+323.991 & 26958.2 & 0.2859 & 0.0016 & 94490.71 & 527.69 \\ 
+\hline
+699.153 & 4106.68 & 0.0755 & 0.0004 & 54393.11 7 & 288.18 \\
+\hline
+1003.030 & 10046.92 & 0.2659 & 0.0020 & 37784.58 & 284.20 \\
+\hline
+2332.911 & 1883.79 & 0.1293 & 0.0008 & 14569.14 & 90.14 \\
+\hline
+\end{tabular}
+\captionof{table}{}
+\end{center}
+Again using (6-8) and (10-12) we are able to fit the data with a linear regression.
+\begin{eqnarray}
+a&=&-78.52\pm 0.40 \\
+b&=&75339.4\pm 290.1 \\
+\text{cov}(a,b)&=&-114.26
+\end{eqnarray}
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{efficiency}
+\caption{The efficiencies as a function of the literature energy taken from NuDat2. A more proper fit would likely be a an exponentially decaying function. There is obviously a correlation between efficiency and energy of the ray.}
+\end{figure}
+
+\printbibliography
+\end{document}
