@@ -21,7 +21,7 @@
   \sortlist[entry]{none/global/}
     \entry{blackboard}{article}{}
       \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Introductory Laboratory -- Nucleons}
       \field{title}{Alpha-Particle Spectroscopy With Si}
@@ -45,7 +45,7 @@
       \strng{authornamehash}{6f9fe91b1d1d6b65695a097126b42731}
       \strng{authorfullhash}{6f9fe91b1d1d6b65695a097126b42731}
       \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{NuDat 2.6}
@@ -76,7 +76,7 @@
       \strng{authornamehash}{477319bbc285d7f3b34652e318c88d71}
       \strng{authorfullhash}{477319bbc285d7f3b34652e318c88d71}
       \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Data reduction and error analysis for the physical sciences}
