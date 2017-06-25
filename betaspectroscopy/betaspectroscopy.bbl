@@ -1,0 +1,142 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{nucleons}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Introductory Laboratory -- Nucleons}
+      \field{title}{Beta-decay and gamma-ray spectroscopy with NaI detectors}
+      \verb{url}
+      \verb https://blackboard.ohio.edu/bbcswebdav/pid-6825045-dt-content-rid-44283882_1/courses/PHYS_3702_101_LAB_SPRG_2016-17/Lab2_BetaGamma_NaI_Detectors.pdf
+      \endverb
+    \endentry
+    \entry{columbia}{article}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{E.K.A. Advanced Physics Laboratory}
+      \field{month}{10}
+      \field{title}{Coincidence Counting}
+      \field{year}{2002}
+      \verb{url}
+      \verb http://phys.columbia.edu/~w3081/exp_files/coin.pdf
+      \endverb
+    \endentry
+    \entry{density}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{7e21a31d9ef6ddc352701d4fa590bfbc}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NIST: X-Ray Mass Attenuation Coefficients - Table 1}
+      \field{note}{[Online; accessed 12-February-2017]}
+      \field{title}{NIST: X-Ray Mass Attenuation Coefficients - Table 1}
+      \verb{url}
+      \verb http://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html
+      \endverb
+    \endentry
+    \entry{harshaw}{book}{}
+      \name{author}{1}{}{%
+        {{hash=365f1a3f60e6f8751737abaf8a5193ef}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harshaw Chemical Co., Cleveland, 1978}%
+      }
+      \strng{namehash}{365f1a3f60e6f8751737abaf8a5193ef}
+      \strng{fullhash}{365f1a3f60e6f8751737abaf8a5193ef}
+      \strng{authornamehash}{365f1a3f60e6f8751737abaf8a5193ef}
+      \strng{authorfullhash}{365f1a3f60e6f8751737abaf8a5193ef}
+      \field{sortinit}{8}
+      \field{sortinithash}{ff392057b609ad7b4de0b8e2cc30b687}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Harshaw Scintillation Phosphors, (2nd Ed.)}
+    \endentry
+    \entry{bevington}{book}{}
+      \name{author}{2}{}{%
+        {{hash=53e019487fc3bf27bab2196b1ab1ef17}{%
+           family={Bevington},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=197caa8144e9d466eab28e735edd64f9}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi Keith.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{fullhash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{authornamehash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{authorfullhash}{477319bbc285d7f3b34652e318c88d71}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data reduction and error analysis for the physical sciences}
+      \field{year}{2002}
+    \endentry
+    \entry{sonzogni}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6f9fe91b1d1d6b65695a097126b42731}{%
+           family={Sonzogni},
+           familyi={S\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Nuclear Data Center}%
+      }
+      \strng{namehash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{fullhash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{authornamehash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{authorfullhash}{6f9fe91b1d1d6b65695a097126b42731}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NuDat 2.6}
+      \field{note}{[Online; accessed 29-January-2017]}
+      \field{title}{Nudat 2}
+      \verb{url}
+      \verb http://www.nndc.bnl.gov/nudat2/
+      \endverb
+    \endentry
+    \entry{nist}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NIST: X-Ray Mass Attenuation Coefficients}
+      \field{title}{NIST: X-Ray Mass Attenuation Coefficients}
+      \verb{url}
+      \verb http://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[1] Config.pm:357> INFO - Logfile is 'rutherford.blg'
+[84] biber:302> INFO - === Mon Apr 24, 2017, 03:34:27
+[122] Biber.pm:359> INFO - Reading 'rutherford.bcf'
+[331] Biber.pm:823> INFO - Found 1 citekeys in bib section 0
+[373] Biber.pm:3658> INFO - Processing section 0
+[406] Biber.pm:3828> INFO - Looking for bibtex format file 'rutherford.bib' for section 0
+[409] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[409] bibtex.pm:1282> INFO - Found BibTeX data source 'rutherford.bib'
+[447] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[455] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[456] Biber.pm:3487> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[456] Biber.pm:3493> INFO - No sort tailoring available for locale 'en-US'
+[458] bbl.pm:597> INFO - Writing 'rutherford.bbl' with encoding 'ascii'
+[459] bbl.pm:701> INFO - Output to rutherford.bbl

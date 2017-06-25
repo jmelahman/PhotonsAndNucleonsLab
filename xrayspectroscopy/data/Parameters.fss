@@ -1,0 +1,302 @@
+
+
+;********************************************************************************
+;Feature Sizing Parameters begin
+;********************************************************************************
+TNFSCP_GreyDecorationToDisplay, 0
+TNFSCP_GreyThreshold0, 20000.000000
+TNFSCP_GreyThreshold1, 40000.000000
+TNFSCP_GreyThreshold2, 0.000000
+TNFSCP_GreyThreshold3, 0.000000
+TNFSCP_NumGreyThreshold, 2
+TNFSCP_GreySelectedAreaLeft, 0.100000
+TNFSCP_GreySelectedAreaTop, 0.100000
+TNFSCP_GreySelectedAreaRight, 0.900000
+TNFSCP_GreySelectedAreaBottom, 0.900000
+TNFSCP_GreyLineProfileRow, 0.500000
+TNFSCP_MeasurementUnits, 1
+TNFSCP_GuardType, 0
+TNFSCP_GuardSize, 0.050000
+TNFSCP_FilterHoleFill, 0
+TNFSCP_FilterSeparate, 0
+TNFSCP_FilterRemoveNoise, 1
+TNFSCP_FilterRemoveNoiseErodes, 1
+TNFSCP_FilterSeparateErodes, 2
+TNFSCP_FilterSeparateDilates, 4
+TNFSCP_FilterSeparateMode, 3
+TNFSCP_SaveImages, 0
+TNFSCP_ArrayOfThresholds, 20000, 40000
+TNFSCP_EnableThresholdTracking, 0
+TNFSCP_TrackingPeakLocationStart, 32768
+TNFSCP_ThresholdPeakFWHMStart, 0.000000
+
+
+;********************************************************************************
+;Feature Sizing Parameters end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Chemical Typing Setup begin
+;********************************************************************************
+TNCHTYPE_UseChemicalTyping, 0
+TNCHTYPE_ChemLibPath, (null)
+TNCHTYPE_LearnMeasuredParticles, 1
+TNCHTYPE_RemoveBackground, 0
+TNCHTYPE_LearnVariance, 10.000000
+TNCHTYPE_BackgroundSpectrum, (null)
+TNCHTYPE_NormalizationElement, 0
+TNCHTYPE_NormalizationLine, 0
+TNCHTYPE_ClassifyElementRichFirst, 1
+TNCHTYPE_EDSAcqTimeSecs, 2
+TNCHTYPE_EDSMaxPeakCounts, 1000
+TNCHTYPE_EDSRaster, 1
+TNCHTYPE_EDSIgnoreSparseSpectra, 1
+TNCHTYPE_EDSMinMaxPeakCounts, 100
+TNCHTYPE_MinimumConc, 3.0
+TNCHTYPE_SaveSpectra, 0
+
+
+;********************************************************************************
+;Feature Sizing Chemical Typing Setup end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Frame Parameters begin
+;********************************************************************************
+;,Index,Name,Data Type,Units,Format,Measure Flag,Sieve Flag,Math Op,Sieve Low,Sieve High,Chem Sieve
+TN_FRAME_PARAM,0,Frame #,0,0,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,1,Frac Area,0,0,%9.6f,1,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,2,Area,0,2,%8.2f,1,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,3,Date/Time,1,0,%s,1,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,4,# Accepted,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,5,# Rejected,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,6,Stage X,0,1,%8.3f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,7,Stage Y,0,1,%8.3f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,8,Stage Z,0,1,%8.3f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,9,Stage Rot.,0,5,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,10,Stage Tilt,0,5,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,11,Stage Bank,0,5,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,12,Mag,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,13,Image X Res,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,14,Image Y Res,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_FRAME_PARAM,15,Pixel Size,0,1,%8.3f,0,0,0,0,0.000000,0.000000,
+
+
+;********************************************************************************
+;Feature Sizing Frame Parameters end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Particle Parameters begin
+;********************************************************************************
+TN_PARTICLE_AND_CHEM_PARAM,-3,REVISION CODE
+;,Index,Name,Data Type,Units,Format,Measure Flag,Sieve Flag,Math Op,Sieve Low,Sieve High,Chem Sieve
+TN_PARTICLE_AND_CHEM_PARAM,0,Total Particles,0,0,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,1,Sub-Particle,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,2,Lot Number,1,0,%s,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,3,Sample,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,4,Type,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,5,Sample Part #,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,6,Sample Frame,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,7,Tot. Sample Frames,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,8,Sample Terminated,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,9,Frame #,0,0,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,10,Particle #,0,0,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,11,% Parent,0,0,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,12,Binary,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,13,Area,0,2,%8.2f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,14,Perimeter,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,15,Circularity,0,0,%8.1f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,16,X COFM,0,6,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,17,Y COFM,0,6,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,18,X Ref,0,6,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,19,Y Ref,0,6,%8.0f,1,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,20,X Feret,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,21,Y Feret,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,22,X Min,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,23,X Max,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,24,Y Min,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,25,Y Max,0,6,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,26,Proj: Min,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,27,Proj: Max,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,28,Proj: Mean,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,29,Proj: Std. Dev.,0,0,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,30,Orientation,0,5,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,31,Length,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,32,Width,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,33,Aspect Ratio,0,0,%8.1f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,34,Int Perimeter,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,35,Int Area,0,2,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,36,Int Count,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,37,Cvx Perimeter,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,38,Cvx Area,0,2,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,39,Cvx Circularity,0,0,%8.1f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,40,Cvx Length,0,1,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,42,Chemical Classification,1,0,%s,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,43,EDS Max Peak Counts,0,0,%8.1f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,44,Chi2 Fit,0,0,%8.2f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,45,Total Conc.,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,47,H,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,48,He,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,49,Li,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,50,Be,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,51,B,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,52,C,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,53,N,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,54,O,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,55,F,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,56,Ne,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,57,Na,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,58,Mg,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,59,Al,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,60,Si,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,61,P,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,62,S,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,63,Cl,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,64,Ar,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,65,K,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,66,Ca,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,67,Sc,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,68,Ti,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,69,V,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,70,Cr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,71,Mn,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,72,Fe,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,73,Co,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,74,Ni,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,75,Cu,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,76,Zn,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,77,Ga,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,78,Ge,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,79,As,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,80,Se,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,81,Br,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,82,Kr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,83,Rb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,84,Sr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,85,Y,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,86,Zr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,87,Nb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,88,Mo,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,89,Tc,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,90,Ru,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,91,Rh,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,92,Pd,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,93,Ag,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,94,Cd,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,95,In,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,96,Sn,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,97,Sb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,98,Te,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,99,I,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,100,Xe,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,101,Cs,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,102,Ba,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,103,La,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,104,Ce,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,105,Pr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,106,Nd,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,107,Pm,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,108,Sm,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,109,Eu,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,110,Gd,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,111,Tb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,112,Dy,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,113,Ho,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,114,Er,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,115,Tm,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,116,Yb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,117,Lu,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,118,Hf,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,119,Ta,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,120,W,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,121,Re,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,122,Os,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,123,Ir,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,124,Pt,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,125,Au,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,126,Hg,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,127,Tl,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,128,Pb,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,129,Bi,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,130,Po,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,131,At,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,132,Rn,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,133,Fr,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,134,Ra,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,135,Ac,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,136,Th,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,137,Pa,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,138,U,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,139,Np,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,140,Pu,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,141,Am,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,142,Cm,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,143,Bk,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,144,Cf,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,145,Es,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,146,Fm,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,147,Md,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+TN_PARTICLE_AND_CHEM_PARAM,148,No,0,0,%8.0f,0,0,0,0,0.000000,0.000000,
+
+
+;********************************************************************************
+;Feature Sizing Particle Parameters end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Display Parameters for Frames begin
+;********************************************************************************
+;,Param,Math Op Lo, Math Op Hi,Data Type,Low Value,High Value,Str Value
+
+
+;********************************************************************************
+;Feature Sizing Display Parameters for Frames end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Display Parameters for Particles begin
+;********************************************************************************
+;,Param,Math Op Lo, Math Op Hi,Data Type,Low Value,High Value,Str Value
+
+
+;********************************************************************************
+;Feature Sizing Display Parameters for Particles end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Spectrum Criteria begin
+;********************************************************************************
+;,Param,Math Op Lo,Math Op Hi,Data Type,Low Value,High Value,Str Value
+
+
+;********************************************************************************
+;Feature Sizing Spectrum Criteria end
+;********************************************************************************
+
+
+;********************************************************************************
+;Feature Sizing Image Criteria begin
+;********************************************************************************
+;,Param,Math Op Lo,Math Op Hi,Data Type,Low Value,High Value,Str Value
+
+
+;********************************************************************************
+;Feature Sizing Image Criteria end
+;********************************************************************************
+
+
+;Feature Sizing Termination Criteria begin
+;********************************************************************************
+;,Param,Math Op Lo,Math Op Hi,Data Type,Low Value,High Value,Str Value
+
+
+;********************************************************************************
+;Feature Sizing Termination Criteria end
+;********************************************************************************

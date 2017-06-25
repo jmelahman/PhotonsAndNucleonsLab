@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'alphaspectroscopy.blg'
+[79] biber:303> INFO - === Sun Jun 25, 2017, 06:16:23
+[115] Biber.pm:359> INFO - Reading 'alphaspectroscopy.bcf'
+[317] Biber.pm:835> INFO - Found 3 citekeys in bib section 0
+[358] Biber.pm:3670> INFO - Processing section 0
+[397] Biber.pm:3840> INFO - Looking for bibtex format file 'alphaspectroscopy.bib' for section 0
+[399] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[409] bibtex.pm:1292> INFO - Found BibTeX data source 'alphaspectroscopy.bib'
+[455] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[455] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[455] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[456] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[463] bbl.pm:608> INFO - Writing 'alphaspectroscopy.bbl' with encoding 'ascii'
+[464] bbl.pm:712> INFO - Output to alphaspectroscopy.bbl

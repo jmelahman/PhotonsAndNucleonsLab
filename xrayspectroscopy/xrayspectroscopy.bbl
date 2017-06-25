@@ -1,0 +1,68 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{michler}{book}{}
+      \name{author}{1}{}{%
+        {{hash=29619104c15af6fc15941b9333247144}{%
+           family={Michler},
+           familyi={M\bibinitperiod},
+           given={Goerg\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{29619104c15af6fc15941b9333247144}
+      \strng{fullhash}{29619104c15af6fc15941b9333247144}
+      \strng{authornamehash}{29619104c15af6fc15941b9333247144}
+      \strng{authorfullhash}{29619104c15af6fc15941b9333247144}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electron microscopy of polymers}
+      \field{year}{2008}
+    \endentry
+    \entry{xdb}{article}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{x-ray data booklet. center for x-ray optics. tables 2009}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://xdb.lbl.gov/
+      \endverb
+    \endentry
+    \entry{mint}{url}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{4110d28fc88fcc726350ba189d38fbca}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The United States Mint About Us}
+      \field{title}{The United States Mint About Us}
+      \verb{url}
+      \verb https://www.usmint.gov/about_the_mint/index583f.html?action=coin_specifications
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

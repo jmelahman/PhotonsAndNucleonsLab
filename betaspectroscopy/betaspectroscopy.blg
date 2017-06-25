@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[1] Config.pm:357> INFO - Logfile is 'betaspectroscopy.blg'
+[106] biber:302> INFO - === Wed Mar 29, 2017, 13:41:14
+[150] Biber.pm:359> INFO - Reading 'betaspectroscopy.bcf'
+[352] Biber.pm:823> INFO - Found 7 citekeys in bib section 0
+[386] Biber.pm:3658> INFO - Processing section 0
+[414] Biber.pm:3828> INFO - Looking for bibtex format file 'betaspectroscopy.bib' for section 0
+[416] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[417] bibtex.pm:1282> INFO - Found BibTeX data source 'betaspectroscopy.bib'
+[467] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[467] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[467] Biber.pm:3487> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[467] Biber.pm:3493> INFO - No sort tailoring available for locale 'en-US'
+[476] bbl.pm:597> INFO - Writing 'betaspectroscopy.bbl' with encoding 'ascii'
+[480] bbl.pm:701> INFO - Output to betaspectroscopy.bbl

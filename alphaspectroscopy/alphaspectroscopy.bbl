@@ -1,0 +1,88 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{blackboard}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Introductory Laboratory -- Nucleons}
+      \field{title}{Alpha-Particle Spectroscopy With Si}
+      \verb{url}
+      \verb https://blackboard.ohio.edu/bbcswebdav/pid-6825046-dt-content-rid-44283883_1/courses/PHYS_3702_101_LAB_SPRG_2016-17/Lab3_Alpha_Si_Detector.pdf
+      \endverb
+    \endentry
+    \entry{sonzogni}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6f9fe91b1d1d6b65695a097126b42731}{%
+           family={Sonzogni},
+           familyi={S\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Nuclear Data Center}%
+      }
+      \strng{namehash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{fullhash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{authornamehash}{6f9fe91b1d1d6b65695a097126b42731}
+      \strng{authorfullhash}{6f9fe91b1d1d6b65695a097126b42731}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NuDat 2.6}
+      \field{note}{[Online; accessed 15-February-2017]}
+      \field{title}{Nudat 2}
+      \verb{url}
+      \verb http://www.nndc.bnl.gov/nudat2/
+      \endverb
+    \endentry
+    \entry{bevington}{book}{}
+      \name{author}{2}{}{%
+        {{hash=53e019487fc3bf27bab2196b1ab1ef17}{%
+           family={Bevington},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=197caa8144e9d466eab28e735edd64f9}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi Keith.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{fullhash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{authornamehash}{477319bbc285d7f3b34652e318c88d71}
+      \strng{authorfullhash}{477319bbc285d7f3b34652e318c88d71}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data reduction and error analysis for the physical sciences}
+      \field{year}{2002}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

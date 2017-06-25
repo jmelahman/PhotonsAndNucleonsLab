@@ -1,0 +1,35 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{blackboard}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Introductory Laboratory -- Nucleons}
+      \field{title}{Rutherford Scattering}
+      \verb{url}
+      \verb https://blackboard.ohio.edu/bbcswebdav/pid-6825049-dt-content-rid-44283886_1/courses/PHYS_3702_101_LAB_SPRG_2016-17/Lab4_RutherfordScattering.pdf
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
